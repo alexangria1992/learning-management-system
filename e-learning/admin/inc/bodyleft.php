@@ -1,9 +1,9 @@
 <div id="bodyleft">
    <h3>Categories Management</h3>
    <ul>
-       <li><a href="">Dashboard</a></li>
-       <li><a href="">View Course Category</a></li>
-       <li><a href="">View Course Sub Categories</a></li>
+       <li><a href="index.php">Dashboard</a></li>
+       <li><a href="index.php?cat">View  Categories</a></li>
+       <li><a href="">View  Sub Categories</a></li>
    </ul>
    <h3>Course Management</h3>
    <ul>

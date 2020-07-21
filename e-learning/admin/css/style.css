@@ -115,3 +115,31 @@ Side body styling
 #bodyleft ul li:hover a{
     color: #3f5267
 }
+
+/* 
+
+Right body styling
+
+*/
+
+
+#bodyright {
+    width: 85%;
+    height: 1000px;
+    background: #fff;
+    float: left;
+    overflow-y: auto;
+}
+
+#bodyright h3{
+    line-height: 30px;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    background: #74889e;
+    height: 30px;
+    margin-bottom: 2%;
+}
+
+

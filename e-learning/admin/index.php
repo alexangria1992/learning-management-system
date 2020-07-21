@@ -11,10 +11,10 @@
     <?php 
       include 'inc/header.php';
       include 'inc/bodyleft.php';
+      include 'inc/bodyright.php';
     
     ?>
 
-    Hello Alex Git Test 2
     
 </body>
 </html>
