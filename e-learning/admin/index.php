@@ -13,6 +13,8 @@
       include 'inc/bodyleft.php';
     
     ?>
+
+    Hello
     
 </body>
 </html>
