@@ -33,3 +33,9 @@
        <li><a href="">Edit Slider</a></li>
    </ul>
 </div>
+
+<?php
+  if(isset($_GET['cat'])){
+      include "cat.php";
+  }
+?>
