@@ -58,6 +58,52 @@
               }  
            }
         }
+
+        
+
+        function view_cat(){
+            include "inc/db.php";
+            $get_cat=$con->prepare("select * from cat");
+            $get_cat->setFetchMode(PDO:: FETCH_ASSOC);
+            $get_cat->execute();
+            $i=1;
+            while($row=$get_cat->fetch()):
+                echo"<tr>
+                        <td>".$i++."</td>
+                        <td>".$row['cat_name']."</td>
+                        <td><a href='#'>Edit</td>
+                        <td><a href='#'>Delete</td>
+
+                    </tr>";
+               
+            endwhile;
+            
+        }
+
+        function view_sub_cat(){
+            include "inc/db.php";
+            $get_cat=$con->prepare("select * from sub_cat");
+            $get_cat->setFetchMode(PDO:: FETCH_ASSOC);
+            $get_cat->execute();
+            $i=1;
+            while($row=$get_cat->fetch()):
+                $id=$row['cat_id'];
+                $get_c = $con->prepare("select * from cat where cat_id='$id'");
+                $get_c->setFetchMode(PDO:: FETCH_ASSOC);
+                $get_c->execute();
+                $row_cat=$get_c->fetch();
+                echo"<tr>
+                        <td>".$i++."</td>
+                        <td>".$row['sub_cat_name']."</td>
+                        <td>".$row_cat['cat_name']."</td>
+                        <td><a href='#'>Edit</td>
+                        <td><a href='#'>Delete</td>
+
+                    </tr>";
+               
+            endwhile;
+            
+        }
  
 
        function select_cat(){

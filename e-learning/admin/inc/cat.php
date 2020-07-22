@@ -8,6 +8,15 @@
              <center><button name="add_cat">Add Category</button></center>
        </form>
        </details>
+       <table cellspacing="0">
+           <tr>
+               <th>Sr. No.</th>
+               <th>Category Name</th>
+               <th>Edit</th>
+               <th>Delete</th>
+           </tr>
+           <?php echo view_cat(); ?>
+       </table>
 
     </div>
 </div>

@@ -143,11 +143,15 @@ Right body styling
 }
 
 #add{
-    width: 60%;
-    margin: auto;
+    width: 100%;
     padding: 2%;
     box-sizing: border-box;
     
+}
+
+#add details{
+    width: 60%;
+    margin: auto;
 }
 
 #add details summary {
@@ -211,4 +215,28 @@ Right body styling
     color: #3f5267;
 
 }
+
+#add table{
+    width: 100%;
+    margin-top: 2%;
+}
+
+#add table tr th {
+    height: 35px;
+    background: #3f5267;
+    color: #fff;
+    text-align: left;
+    padding-left: 2%;
+    box-sizing: border-box;
+    font-size: 12px;
+    
+
+}
+
+#add table tr td {
+ height: 30px;
+ padding-left: 2%;
+ box-sizing: border-box;
+ font-size: 14px;
+}  
 

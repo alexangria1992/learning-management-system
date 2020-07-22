@@ -12,6 +12,16 @@
              <center><button name="add_sub_cat">Add Category</button></center>
        </form>
        </details>
+       <table cellspacing="0">
+           <tr>
+               <th>Sr. No.</th>
+               <th>Sub Category Name</th>
+               <th>Main Category Name</th>
+               <th>Edit</th>
+               <th>Delete</th>
+           </tr>
+           <?php echo view_sub_cat(); ?>
+       </table>
 
     </div>
 </div>

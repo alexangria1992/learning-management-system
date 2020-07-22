@@ -7,7 +7,7 @@ $password = "";
 
 try {
  $con = new PDO($con, $username, $password);
- echo "You have connected!";
+ 
 }
 catch(PDOException $e) {
  $error_message = $e->getMessage();
