@@ -5,7 +5,7 @@
             <summary>Add Sub Category</summary>
         <form method="post" enctype="multipart/form-data">
         <select name="cat_id">
-            <option>Select Category</option>
+            <option value="">Select Category</option>
             <?php echo select_cat(); ?>
          </select>
              <input type="text" name="sub_cat_name" placeholder="Enter Category Name Here">
