@@ -23,11 +23,19 @@
             else {
                 echo"<script>alert('Category Added Unsuccessfully')</script>";
                 echo"<script>alert('Category Added Successfully')</script>";
-             }
-        }
-
-      
-
+                }
+             }  
+          }
        }
-   }
+
+       function select_cat(){
+           include 'inc/db.php';
+           $get_cat=$con->prepare("select * from cat");
+           $get_cat->setFetchMode(PDO:: FETCH_ASSOC);
+           $get_cat->execute();
+           while($row=$get_cat->fetch()):
+            echo "<option>".$row['cat_name']."</option>";
+        
+           endwhile;
+       }
 ?>

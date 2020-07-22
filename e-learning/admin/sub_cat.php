@@ -1,11 +1,15 @@
 <div id="bodyright">
-    <h3>View All Categories</h3>
+    <h3>View All Sub Categories</h3>
     <div id="add">
         <details>
-            <summary>Add Category</summary>
+            <summary>Add Sub Category</summary>
         <form method="post" enctype="multipart/form-data">
+        <select name="cat_id">
+            <option>Select Category</option>
+            <?php echo select_cat(); ?>
+         </select>
              <input type="text" name="sub_cat_name" placeholder="Enter Category Name Here">
-             <center><button name="add_cat">Add Category</button></center>
+             <center><button name="add_sub_cat">Add Category</button></center>
        </form>
        </details>
 
