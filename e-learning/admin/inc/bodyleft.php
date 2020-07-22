@@ -3,7 +3,7 @@
    <ul>
        <li><a href="index.php">Dashboard</a></li>
        <li><a href="index.php?cat">View  Categories</a></li>
-       <li><a href="">View  Sub Categories</a></li>
+       <li><a href="index.php?sub_cat">View  Sub Categories</a></li>
    </ul>
    <h3>Course Management</h3>
    <ul>
@@ -38,4 +38,8 @@
   if(isset($_GET['cat'])){
       include "cat.php";
   }
+
+  if(isset($_GET['sub_cat'])){
+    include "sub_cat.php";
+}
 ?>
