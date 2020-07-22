@@ -1,3 +1,5 @@
+<?php include 'inc/function.php'; ?>
+
 <div id="header">
     <div id="logo">
          <h2><a href="index.php">E-Learning</a></h2>

@@ -11,3 +11,5 @@
 
     </div>
 </div>
+
+<?php echo add_cat(); ?>
